@@ -1,0 +1,43 @@
+.img__DEVlogo {
+  height: 30px;
+}
+
+.img__magnifier {
+  height: 15px;
+}
+
+.button__create-post {
+  height: 32px;
+}
+
+.img__login {
+  height: 30px;
+}
+
+.img__bell {
+  height: 15px;
+}
+
+.ul__up-left-aside {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ul__down-left-aside {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.img__nut {
+  height: 25px;
+}
+
+.img__main-img {
+  width: 100%;
+}
+
+.list-group-horizontal {
+  list-style-type: none;
+}/*# sourceMappingURL=styles.css.map */
