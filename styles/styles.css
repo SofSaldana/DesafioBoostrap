@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(245, 245, 245) !important;
+}
+
 .img__login {
   height: 30px;
 }
@@ -26,21 +30,30 @@
   list-style-type: none;
 }
 
+.form__search-box-nav {
+  width: 410px;
+  position: relative;
+  height: 40px;
+}
+
 .img__magnifier {
-  height: 15px;
+  left: 370px;
+  bottom: 10px;
+}
+
+.imput__form-control {
+  width: 420px;
 }
 
 .img__DEVlogo {
   height: 40px;
   width: 50px;
-}
-
-.imput__form-control {
-  background: url(../assets/lupa.png);
+  border-radius: 4px;
 }
 
 .navbar__main--white {
   background-color: white;
+  height: 56px;
 }
 
 .button__create-post {
