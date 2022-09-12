@@ -1,41 +1,82 @@
-.img__DEVlogo {
-    height: 30px;
-}
-
-.img__magnifier {
-    height: 15px;
-}
-
-.button__create-post {
-    height: 32px;
-}
 
 .img__login {
-    height: 30px;
-}
-
-.img__bell {
-    height: 15px;
+  height: 30px;
 }
 
 .ul__up-left-aside {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .ul__down-left-aside {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-.img__nut{
-    height: 25px;
+.img__nut {
+  height: 25px;
 }
 
-.img__main-img{
-    width: 100%;
+.img__main-img {
+  width: 100%;
 }
-.list-group-horizontal{
-    list-style-type: none;
+.list-group-horizontal {
+  list-style-type: none;
 }
+
+// scss rules for Esteban
+
+.img__magnifier {
+    height: 15px;
+  }
+
+.img__DEVlogo {
+    height: 40px;
+    width: 50px;
+  }
+
+.imput__form-control {
+  background: url(../assets/lupa.png);
+}
+
+.navbar__main--white {
+  background-color: white;
+}
+.button__create-post {
+    height: 40px;
+    cursor: pointer;
+    background-color: white;
+    color: rgb(59 73 223);
+    margin: 10px;
+    border: 1px solid  rgb(59 73 223);
+    border-radius: 5px;
+    width: 120px;
+    font-weight: bold;
+    
+  }
+  .button__create-post:hover {
+    background-color:rgb(59 73 223);
+    color: white;
+    text-decoration: underline;
+  }
+
+  .button__bell {
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    .img__bell {
+        height: 24px;
+        width: 24px;
+      }
+
+  }
+
+  .button__bell:hover {
+    background-color:rgb(59 73 223 / 10%)  ;
+  }
+
+  
+  // END OF SCSS RULES FOR ESTEBAN

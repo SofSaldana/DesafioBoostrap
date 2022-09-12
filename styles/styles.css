@@ -1,21 +1,5 @@
-.img__DEVlogo {
-  height: 30px;
-}
-
-.img__magnifier {
-  height: 15px;
-}
-
-.button__create-post {
-  height: 32px;
-}
-
 .img__login {
   height: 30px;
-}
-
-.img__bell {
-  height: 15px;
 }
 
 .ul__up-left-aside {
@@ -40,4 +24,55 @@
 
 .list-group-horizontal {
   list-style-type: none;
+}
+
+.img__magnifier {
+  height: 15px;
+}
+
+.img__DEVlogo {
+  height: 40px;
+  width: 50px;
+}
+
+.imput__form-control {
+  background: url(../assets/lupa.png);
+}
+
+.navbar__main--white {
+  background-color: white;
+}
+
+.button__create-post {
+  height: 40px;
+  cursor: pointer;
+  background-color: white;
+  color: rgb(59, 73, 223);
+  margin: 10px;
+  border: 1px solid rgb(59, 73, 223);
+  border-radius: 5px;
+  width: 120px;
+  font-weight: bold;
+}
+
+.button__create-post:hover {
+  background-color: rgb(59, 73, 223);
+  color: white;
+  text-decoration: underline;
+}
+
+.button__bell {
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
+}
+.button__bell .img__bell {
+  height: 24px;
+  width: 24px;
+}
+
+.button__bell:hover {
+  background-color: rgba(59, 73, 223, 0.1);
 }/*# sourceMappingURL=styles.css.map */
