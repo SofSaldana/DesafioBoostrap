@@ -40,4 +40,66 @@
 
 .list-group-horizontal {
   list-style-type: none;
+}
+
+.a__see-all {
+  text-decoration: none;
+}
+
+.a__second-anchord {
+  text-decoration: none;
+  color: black;
+}
+
+.link__secondary {
+  margin-top: 5px;
+  color: rgb(165, 156, 156);
+}
+
+.a__third-anchord {
+  text-decoration: none;
+  color: black;
+}
+
+.link__secondary-third {
+  margin-top: 5px;
+  color: rgb(165, 156, 156);
+}
+
+.a__first-anchord {
+  text-decoration: none;
+  color: black;
+}
+
+.link__secondary-first {
+  margin-top: 5px;
+  color: rgb(165, 156, 156);
+}
+
+.a__second-anchord {
+  text-decoration: none;
+  color: black;
+}
+
+.link__secondary-second {
+  margin-top: 5px;
+  color: rgb(165, 156, 156);
+}
+
+.a__create-listing {
+  text-decoration: none;
+  color: black;
+}
+
+.a__create-listing {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+}
+
+.link__secondary-second-new {
+  background-color: rgb(252, 207, 73);
+  border-radius: 5px;
+  height: 25px;
+  width: 35px;
+  margin-top: 5px;
 }/*# sourceMappingURL=styles.css.map */
