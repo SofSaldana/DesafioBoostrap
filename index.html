@@ -1,257 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg border-bottom d-flex">
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- --Start of the navbar/Esteban -->
+
+    <nav
+      class="navbar navbar-expand-lg border-bottom d-flex sticky-top container-fluid navbar__main--white"
+    >
+      <div class="container-lg div__navbar-main d-flex justify-content-between">
         <div class="div__logo-search d-flex">
-        <div class="container d-flex justify-content-around">
-          <a class="navbar-brand" href="#">
-            <img class="img__DEVlogo" src="./assets/DEV.png.png" alt="">
-          </a>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" place>
-              <button class="button__magnifier">
-                <img src="./assets/lupa.png" alt="" class="img__magnifier">
-              </button>
+          <div
+            class="container d-flex justify-content-around align-items-center"
+          >
+            <a class="navbar-brand" href="#">
+              <img
+                class="img__DEVlogo"
+                src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+                alt=""
+              />
+            </a>
+            <form class="d-flex form__search-box-nav" role="search">
+              <input
+                class="form-control me-2 imput__form-control"
+                type="search"
+                placeholder="Search..."
+                aria-label="Search"
+                place
+              />
+              <img
+                src="./assets/magnifyer.svg"
+                alt=""
+                class="img__magnifier d-inline-block position-absolute"
+              />
             </form>
           </div>
-          </div>
-  <div class="div__user-menu d-flex">
-    <button class="button__create-post">Create Post</button>
-    <button class="button__bell">
-        <img src="./assets/packard-bell.png" alt="" class="img__bell">
-    </button>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <img src="./assets/user photo.webp" alt="" class="img__login rounded-circle align-items-center">
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Profile</a>
-                    <a class="dropdown-item" href="#">Dashboard</a>
-                    <a class="dropdown-item" href="#">Reading list</a>
-                    <a class="dropdown-item" href="#">Seetings</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Sing out</a>
-                  </div>
-                </li>
-                </a>      
         </div>
-      </nav>
-      <div class="container">
-        <div class="row">
-            <div class="col">
-                <ul class="ul__up-left-aside">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Reading list</a></li>
-                    <li><a href="">Listings</a></li>
-                    <li><a href="">Podcast</a></li>
-                    <li><a href="">Videos</a></li>
-                    <li><a href="">Tags</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Forem shop</a></li>
-                    <li><a href="">Sponsors</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Guides</a></li>
-                    <li><a href="">Software comparisons</a></li>
-                </ul>
-            <div class="row">
-                <p><b>Other</b></p>
-                <ul class="ul__down-left-aside">
-                    <li> <a href="">Code of conduct</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                    <li><a href="">Terms of use</a></li>
-                </ul>
+        <div class="div__user-menu d-flex align-items-center">
+          <button class="button__create-post mx-1">Create Post</button>
+          <button class="button__bell mx-1">
+            <img src="./assets/notificationbell.svg" alt="" class="img__bell" />
+          </button>
+          <div class="nav-item dropdown mx-1 me-5">
+            <a
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="./assets/user photo.webp"
+                alt=""
+                class="img__login rounded-circle align-items-center"
+              />
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">User name</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Dashboard</a></li>
+              <li><a class="dropdown-item" href="#">Create Post</a></li>
+              <li><a class="dropdown-item" href="#">Reading List</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Sign Out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End of the navbar for Esteban -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <ul class="ul__up-left-aside">
+            <li><a href="">Home</a></li>
+            <li><a href="">Reading list</a></li>
+            <li><a href="">Listings</a></li>
+            <li><a href="">Podcast</a></li>
+            <li><a href="">Videos</a></li>
+            <li><a href="">Tags</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Forem shop</a></li>
+            <li><a href="">Sponsors</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Guides</a></li>
+            <li><a href="">Software comparisons</a></li>
+          </ul>
+          <div class="row">
+            <p><b>Other</b></p>
+            <ul class="ul__down-left-aside">
+              <li><a href="">Code of conduct</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Terms of use</a></li>
+            </ul>
+          </div>
+          <div class="row">Social media buttons</div>
+          <div class="row">
+            <nav class="navbar navbar-light">
+              <div class="container d-flex">
+                <a class="navbar-brand" href="#"
+                  >My Tag
+                  <img src="./assets/nut.png" alt="" class="img__nut" />
+                </a>
+              </div>
+            </nav>
+          </div>
+          <div class="row">
+            <div class="card mt-5" style="width: 18rem">
+              <img
+                src="./assets/Codenewbie.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Calling all early-career developers & coding mentors!
+                </h5>
+                <p class="card-text">
+                  Join CodeNewbie Community: a supportive space for coding
+                  newbies to connect & express themselves.
+                </p>
+                <a href="#">→Get in on the fun!</a>
+              </div>
             </div>
-            <div class="row">Social media buttons</div>
-            <div class="row">
-                <nav class="navbar navbar-light">
-                    <div class="container d-flex">
-                      <a class="navbar-brand" href="#">My Tag
-                        <img src="./assets/nut.png" alt="" class="img__nut">
-                      </a>
-                    </div>
-                  </nav>
+          </div>
+          <div class="row">
+            <div class="card mt-5" style="width: 18rem">
+              <div class="card-body">
+                <p class="card-text">
+                  DEV runs on 100% open source code known as Forem Contribute to
+                  the codebase or host your own!.
+                </p>
+                <h6 class="card-title">Check these out!</h6>
+                <a href="#"
+                  ><ul>
+                    <li>Main Forem Repo</li>
+                  </ul></a
+                >
+                <a href="#"
+                  ><ul>
+                    <li>Self-Host Instructions</li>
+                  </ul></a
+                >
+              </div>
             </div>
-            <div class="row">
-                <div class="card mt-5" style="width: 18rem;">
-                    <img src="./assets/Codenewbie.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Calling all early-career developers & coding mentors!</h5>
-                      <p class="card-text">Join CodeNewbie Community: a supportive space for coding newbies to connect & express themselves.</p>
-                      <a href="#">→Get in on the fun!</a>
-                    </div>
-                  </div>
+          </div>
+        </div>
+        <!-- --start of the main/post colum-- -->
+        <div class="col">
+          <nav class="nav__second-nav">
+            <ul class="list-group list-group-horizontal">
+              <li class="mx-3"><a href="">Relevant</a></li>
+              <li class="mx-3"><a href="">Lates</a></li>
+              <li class="mx-3"><a href="">Top</a></li>
+            </ul>
+          </nav>        
+          <div class="card card__main mb-3">
+            <img
+              src="./assets/TOP Comment+Discussion.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body ">
+              <a href="">
+                <img class="img__card-main--user" src="./assets/DEV.png.png " alt="" />
+              </a>
+              <a class="anchor__card-main" href=""
+                ><h5 class="card-title">
+                  The Best GitHub Repositories For Django Developers
+                </h5></a
+              >            
+              <div class="div__card-hashtag"><a class="a__card-hashtag" href="">
+              <button class="button__card-hashtag">#Django</button> </a>
             </div>
-            <div class="row">
-                <div class="card mt-5" style="width: 18rem;">
-                    <div class="card-body">
-                      <p class="card-text">DEV runs on 100% open source code known as Forem 
-                        Contribute to the codebase or host your own!.</p>
-                        <h6 class="card-title">Check these out!</h6>
-                      <a href="#"><ul><li>Main Forem Repo</li></ul></a>
-                      <a href="#"><ul><li>Self-Host Instructions</li></ul></a>
-                    </div>
-                  </div>
+            <div class="div__card-buttons">
+              <a href="" class="a__card-button-reactions">
+              <button class="button__card-reactions">34 reactions</button></a>
+              <a href="" class="a__card-button-comments">
+              <button class="button__card-comments">26 comments</button></a>
             </div>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
             </div>
-            <div class="col">
-                <nav class="nav__second-nav">
-                    <ul class="list-group list-group-horizontal">
-                    <li class="mx-3"><a href="">Relevant</a></li>
-                    <li class="mx-3"><a href="">Lates</a></li>
-                    <li class="mx-3"><a href="">Top</a></li>
-                </ul>
-                </nav>
-                <img src="./assets/TOP Comment+Discussion.webp" alt="" class="img__main-img">
-                <div class="card card__main mb-3">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                  <div class="card card__main mb-3">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                    <img src="..." class="card-img-bottom" alt="...">
-                  </div>
-                  <div class="card card__main mb-3">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                  <div class="card card__main mb-3">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                    <img src="..." class="card-img-bottom" alt="...">
-                  </div>
-                  <div class="card card__main mb-3">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                  <div class="card card__main mb-3">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                    <img src="..." class="card-img-bottom" alt="...">
-                  </div>
-                  <div class="card card__main mb-3">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                  <div class="card card__main mb-3">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                    <img src="..." class="card-img-bottom" alt="...">
-                  </div>
-                  <div class="card card__main mb-3">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                  <div class="card card__main mb-3">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                    <img src="..." class="card-img-bottom" alt="...">
-                  </div>
+          </div>
+          <div class="card card__main mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
             </div>
-            <div class="col">
-                <div class="card mx-4 my-4" style="width: 18rem;">
-                    <img src="./assets/Satisfaction Survey img.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h6 class="card-title mb-3"><b>Tell us your thoughts about DEV!</b></h6>
-                      <a href="#" class="mb-3"><b>→ Take the DEV Satisfaction Survey</b></a>
-                    </div>
-                  </div>
-             <div class="div__listing ms-4">
-                <div class="card mb-3" style="width: 18rem;">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">An item</li>
-                      <li class="list-group-item">A second item</li>
-                      <li class="list-group-item">A third item</li>
-                    </ul>
-                  </div>
-                  <div class="card mb-3" style="width: 18rem;">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">An item</li>
-                      <li class="list-group-item">A second item</li>
-                      <li class="list-group-item">A third item</li>
-                    </ul>
-                  </div>
-                  <div class="card mb-3" style="width: 18rem;">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">An item</li>
-                      <li class="list-group-item">A second item</li>
-                      <li class="list-group-item">A third item</li>
-                    </ul>
-                  </div>
-                  <div class="card mb-3" style="width: 18rem;">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">An item</li>
-                      <li class="list-group-item">A second item</li>
-                      <li class="list-group-item">A third item</li>
-                    </ul>
-                  </div>
-                  <div class="card mb-3" style="width: 18rem;">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">An item</li>
-                      <li class="list-group-item">A second item</li>
-                      <li class="list-group-item">A third item</li>
-                    </ul>
-                  </div>
-                  <div class="card mb-3" style="width: 18rem;">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">An item</li>
-                      <li class="list-group-item">A second item</li>
-                      <li class="list-group-item">A third item</li>
-                    </ul>
-                  </div>
-                  <div class="card mb-3" style="width: 18rem;">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">An item</li>
-                      <li class="list-group-item">A second item</li>
-                      <li class="list-group-item">A third item</li>
-                    </ul>
-                  </div>
-             </div>     
+            <img src="..." class="card-img-bottom" alt="..." />
+          </div>
+          <div class="card card__main mb-3">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
             </div>
+          </div>
+          <div class="card card__main mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+            <img src="..." class="card-img-bottom" alt="..." />
+          </div>
+          <div class="card card__main mb-3">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+          </div>
+          <div class="card card__main mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+            <img src="..." class="card-img-bottom" alt="..." />
+          </div>
+          <div class="card card__main mb-3">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+          </div>
+          <div class="card card__main mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+            <img src="..." class="card-img-bottom" alt="..." />
+          </div>
+          <div class="card card__main mb-3">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+          </div>
+          <div class="card card__main mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+            <img src="..." class="card-img-bottom" alt="..." />
+          </div>
+        </div>
+        <!-- -----end of the main/post colum-- -->
+
+        <div class="col">
+          <div class="card mx-4 my-4" style="width: 18rem">
+            <img
+              src="./assets/Satisfaction Survey img.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h6 class="card-title mb-3">
+                <b>Tell us your thoughts about DEV!</b>
+              </h6>
+              <a href="#" class="mb-3"
+                ><b>→ Take the DEV Satisfaction Survey</b></a
+              >
+            </div>
+          </div>
+          <div class="div__listing ms-4">
+            <div class="card mb-3" style="width: 18rem">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+            </div>
+            <div class="card mb-3" style="width: 18rem">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+            </div>
+            <div class="card mb-3" style="width: 18rem">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+            </div>
+            <div class="card mb-3" style="width: 18rem">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+            </div>
+            <div class="card mb-3" style="width: 18rem">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+            </div>
+            <div class="card mb-3" style="width: 18rem">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+            </div>
+            <div class="card mb-3" style="width: 18rem">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
      <div class="content-fluid bg-secondary">
