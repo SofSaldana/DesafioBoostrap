@@ -88,4 +88,8 @@ body {
 
 .button__bell:hover {
   background-color: rgba(59, 73, 223, 0.1);
+}
+
+.img__forem-icon {
+  width: 40px;
 }/*# sourceMappingURL=styles.css.map */
