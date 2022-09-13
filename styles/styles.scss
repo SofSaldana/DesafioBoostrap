@@ -1,44 +1,102 @@
-.img__DEVlogo {
-    height: 30px;
-}
-
-.img__magnifier {
-    height: 15px;
-}
-
-.button__create-post {
-    height: 32px;
+body {
+    background-color: rgb(245 245 245)!important;
 }
 
 .img__login {
-    height: 30px;
-}
-
-.img__bell {
-    height: 15px;
+  height: 30px;
 }
 
 .ul__up-left-aside {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .ul__down-left-aside {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-.img__nut{
-    height: 25px;
+.img__nut {
+  height: 25px;
 }
 
-.img__main-img{
-    width: 100%;
+.img__main-img {
+  width: 100%;
 }
-.list-group-horizontal{
-    list-style-type: none;
+.list-group-horizontal {
+  list-style-type: none;
 }
+
+// scss rules for Esteban
+
+.form__search-box-nav {
+    width: 410px;
+    position: relative;
+    height: 40px;
+}
+
+.img__magnifier {
+    left: 370px;
+    bottom: 10px;
+
+}
+.imput__form-control {
+    width: 420px;
+}
+    
+  
+
+.img__DEVlogo {
+    height: 40px;
+    width: 50px;
+    border-radius: 4px;
+  }
+
+
+.navbar__main--white {
+  background-color: white;
+  height: 56px;
+}
+.button__create-post {
+    height: 40px;
+    cursor: pointer;
+    background-color: white;
+    color: rgb(59 73 223);
+    margin: 10px;
+    border: 1px solid  rgb(59 73 223);
+    border-radius: 5px;
+    width: 120px;
+    font-weight: bold;
+    
+  }
+  .button__create-post:hover {
+    background-color:rgb(59 73 223);
+    color: white;
+    text-decoration: underline;
+  }
+
+  .button__bell {
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    .img__bell {
+        height: 24px;
+        width: 24px;
+      }
+
+  }
+
+  .button__bell:hover {
+    background-color:rgb(59 73 223 / 10%)  ;
+  }
+
+
+
+  
+  // END OF SCSS RULES FOR ESTEBAN
 
 .img__forem-icon{
     width: 40px;
