@@ -1,41 +1,234 @@
-.img__DEVlogo {
-    height: 30px;
-}
-
-.img__magnifier {
-    height: 15px;
-}
-
-.button__create-post {
-    height: 32px;
+body {
+  background-color: rgb(245 245 245) !important;
 }
 
 .img__login {
-    height: 30px;
-}
-
-.img__bell {
-    height: 15px;
+  height: 30px;
 }
 
 .ul__up-left-aside {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .ul__down-left-aside {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-.img__nut{
-    height: 25px;
+.img__nut {
+  height: 25px;
 }
 
-.img__main-img{
-    width: 100%;
+.img__main-img {
+  width: 100%;
 }
-.list-group-horizontal{
-    list-style-type: none;
+.list-group-horizontal {
+  list-style-type: none;
+}
+
+// scss rules for Esteban
+
+.form__search-box-nav {
+  width: 410px;
+  position: relative;
+  height: 40px;
+}
+
+.img__magnifier {
+  left: 370px;
+  bottom: 10px;
+}
+.imput__form-control {
+  width: 420px;
+}
+
+.img__DEVlogo {
+  height: 40px;
+  width: 50px;
+  border-radius: 4px;
+}
+
+.navbar__main--white {
+  background-color: white;
+  height: 56px;
+}
+.button__create-post {
+  height: 40px;
+  cursor: pointer;
+  background-color: white;
+  color: rgb(59 73 223);
+  margin: 10px;
+  border: 1px solid rgb(59 73 223);
+  border-radius: 5px;
+  width: 120px;
+  font-weight: bold;
+}
+.button__create-post:hover {
+  background-color: rgb(59 73 223);
+  color: white;
+  text-decoration: underline;
+}
+
+.button__bell {
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
+  .img__bell {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.button__bell:hover {
+  background-color: rgb(59 73 223 / 10%);
+}
+
+// END OF SCSS RULES FOR ESTEBAN
+
+.img__forem-icon {
+  width: 40px;
+}
+.list-group-horizontal {
+  list-style-type: none;
+}
+// parte jossimar
+
+.a__see-all {
+  text-decoration: none;
+}
+
+.a__second-anchord {
+  text-decoration: none;
+  color: black;
+}
+
+.link__secondary {
+  margin-top: 5px;
+  color: rgb(165, 156, 156);
+}
+
+.a__third-anchord {
+  text-decoration: none;
+  color: black;
+}
+
+.link__secondary-third {
+  margin-top: 5px;
+  color: rgba(165, 156, 156);
+}
+
+.a__first-anchord {
+  text-decoration: none;
+  color: black;
+}
+
+.link__secondary-first {
+  margin-top: 5px;
+  color: rgb(165, 156, 156);
+}
+
+.a__second-anchord {
+  text-decoration: none;
+  color: black;
+}
+
+.link__secondary-second {
+  margin-top: 5px;
+  color: rgb(165, 156, 156);
+}
+
+.a__create-listing {
+  text-decoration: none;
+  color: black;
+}
+.a__create-listing {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+}
+.link__secondary-second-new {
+  background-color: rgb(252, 207, 73);
+  border-radius: 5px;
+  height: 25px;
+  width: 35px;
+  margin-top: 5px;
+}
+.img__twitter {
+  width: 20px;
+  background: none;
+}
+.img__Facebook {
+  width: 20px;
+  background: none;
+}
+.img__Github {
+  width: 20px;
+  background: none;
+}
+.img__IG {
+  width: 20px;
+  background: none;
+}
+.img__twitch {
+  width: 20px;
+  background: none;
+}
+.img__house-logo {
+  height: 15px;
+}
+
+.img__reading-list {
+  height: 15px;
+}
+.img__Podcast {
+  height: 15px;
+}
+.img__videos {
+  height: 15px;
+}
+.img__listings {
+  height: 15px;
+}
+.img__tags {
+  height: 15px;
+}
+.img__FAQ {
+  height: 15px;
+}
+.img__Forem-Shop {
+  height: 15px;
+}
+
+.img__sponsors {
+  height: 15px;
+}
+.img__about {
+  height: 15px;
+}
+.img__contact {
+  height: 15px;
+}
+.img__guides {
+  height: 15px;
+}
+.img__Software {
+  height: 15px;
+}
+.img__tumb-up {
+  height: 15px;
+}
+.img__Policy {
+  height: 15px;
+}
+.img__terms {
+  height: 15px;
+}
+.img__favorite-icon{
+  height: 15px;
+}
+.img__convesation-icon{
+  height: 15px;
 }
