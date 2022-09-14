@@ -38,7 +38,7 @@
             </a>
             <form class="d-flex form__search-box-nav" role="search">
               <input
-                class="form-control me-2 imput__form-control"
+                class="form-control me-2 imput__form-control d-none d-sm-none d-md-block"
                 type="search"
                 placeholder="Search..."
                 aria-label="Search"
@@ -53,7 +53,9 @@
           </div>
         </div>
         <div class="div__user-menu d-flex align-items-center">
-          <button class="button__create-post mx-1">Create Post</button>
+          <button class="button__create-post mx-1 d-none d-sm-none d-md-block">
+            Create Post
+          </button>
           <button class="button__bell mx-1">
             <img src="./assets/notificationbell.svg" alt="" class="img__bell" />
           </button>
@@ -88,7 +90,7 @@
     <div class="container">
       <!-- aside izquierdo---- -->
       <div class="row">
-        <div class="col-3">
+        <div class="col-3 d-none d-sm-none d-md-block">
           <ul class="ul__up-left-aside">
             <li>
               <img
@@ -316,55 +318,105 @@
             </ul>
           </nav>
           <div class="card card__main mb-3">
-            <img
-              src="./assets/TOP Comment+Discussion.webp"
-              class="card-img-top"
-              alt="..."
-            />
             <div class="card-body">
-              <a href="">
                 <img
-                  class="img__card-main--user"
-                  src="./assets/DEV.png.png "
+                  class="img__card-main-user"
+                  src="./assets/remote job.jpg "
                   alt=""
                 />
               </a>
-              <a class="anchor__card-main" href=""
-                ><h5 class="card-title">
-                  The Best GitHub Repositories For Django Developers
-                </h5></a
+              <a class="anchor__card-main" href="./post1.html"
+                ><h5 class="card-title">Finding remote work in 2022</h5></a
               >
-              <div class="div__card-hashtag">
-                <a class="a__card-hashtag" href="">#Django </a>
-              </div>
-              <div class="div__card-buttons">
-                <a href="" class="a__card-button-reactions">
-                  <button class="button__card-reactions">
-                    34 reactions
-                  </button></a
-                >
-                <a href="" class="a__card-button-comments">
-                  <button class="button__card-comments">26 comments</button></a
-                >
-              </div>
               <p class="card-text">
                 <small class="text-muted">Last updated 3 mins ago</small>
               </p>
+              <div class="div__card-hashtag">
+                <a class="a__card-hashtag text-decoration-none btn" href=""
+                  >#remote</a
+                >
+                <a class="a__card-hashtag text-decoration-none btn" href=""
+                  >#interview</a
+                >
+                <a class="a__card-hashtag text-decoration-none btn" href=""
+                  >#career</a
+                >
+                <a class="a__card-hashtag text-decoration-none btn" href=""
+                  >#job</a
+                >
+              </div>
+              <div class="div__card-buttons text">
+                <img
+                  src="./assets/favorito.png"
+                  alt=""
+                  class="img__favorite-icon"
+                /><a
+                  href=""
+                  class="a__card-button-reactions text-decoration-none btn"
+                >
+                  34 reactions</a
+                >
+                <img
+                  src="./assets/burbuja-de-dialogo.png"
+                  alt=""
+                  class="img__convesation-icon"
+                /><a
+                  href=""
+                  class="a__card-button-comments text-decoration-none btn"
+                  >26 comments</a
+                >
+              </div>
             </div>
           </div>
           <div class="card card__main mb-3">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
+            <a href="https://dev.to/k_ivanow/finding-remote-work-in-2022-26j">
+              <img
+                class="img__card-main-user"
+                src="./assets/remote job.jpg "
+                alt=""
+              />
+            </a>
+            <a class="anchor__card-main" href=""
+              ><h5 class="card-title">Finding remote work in 2022</h5></a
+            >
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+            <div class="div__card-hashtag">
+              <a class="a__card-hashtag text-decoration-none btn" href=""
+                >#remote</a
+              >
+              <a class="a__card-hashtag text-decoration-none btn" href=""
+                >#interview</a
+              >
+              <a class="a__card-hashtag text-decoration-none btn" href=""
+                >#career</a
+              >
+              <a class="a__card-hashtag text-decoration-none btn" href=""
+                >#job</a
+              >
             </div>
-            <img src="..." class="card-img-bottom" alt="..." />
+            <div class="div__card-buttons text">
+              <img
+                src="./assets/favorito.png"
+                alt=""
+                class="img__favorite-icon"
+              /><a
+                href=""
+                class="a__card-button-reactions text-decoration-none btn"
+              >
+                34 reactions</a
+              >
+              <img
+                src="./assets/burbuja-de-dialogo.png"
+                alt=""
+                class="img__convesation-icon"
+              /><a
+                href=""
+                class="a__card-button-comments text-decoration-none btn"
+                >26 comments</a
+              >
+            </div>
           </div>
           <div class="card card__main mb-3">
             <img src="..." class="card-img-top" alt="..." />
@@ -507,9 +559,9 @@
             </div>
           </div>
         </div>
-       
+
         <!-- -----end of the main/post colum-- -->
-        <div class="col-3">
+        <div class="col-3 d-none d-sm-none d-md-block">
           <div class="card mx-4 my-4" style="width: 18rem">
             <img
               src="./assets/Satisfaction Survey img.png"

@@ -1,50 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg border-bottom d-flex sticky-top container-fluid navbar__main--white">
-        <div class="container-lg div__navbar-main d-flex justify-content-between">
-            <div class="div__logo-search d-flex">
-            <div class="container d-flex justify-content-around align-items-center">
-              <a class="navbar-brand" href="#">
-                <img class="img__DEVlogo " src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png" alt="">
-              </a>
-                <form class="d-flex form__search-box-nav" role="search">
-                  <input class="form-control me-2 imput__form-control" type="search" placeholder="Search..." aria-label="Search" place>
-                  <img src="./assets/magnifyer.svg" alt="" class="img__magnifier d-inline-block position-absolute">            
-                </form>
-              </div>
-              </div>
-      <div class="div__user-menu d-flex align-items-center ">
-        <button class="button__create-post mx-1">Create Post</button>
-        <button class="button__bell mx-1">
-            <img src="./assets/notificationbell.svg" alt="" class="img__bell">
-        </button>
-        <div class="nav-item dropdown mx-1 me-5">
-          <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="./assets/user photo.webp" alt="" class="img__login rounded-circle align-items-center">
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">User name</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Dashboard</a></li>
-            <li><a class="dropdown-item" href="#">Create Post</a></li>
-            <li><a class="dropdown-item" href="#">Reading List</a></li>
-            <li><a class="dropdown-item" href="#">Settings</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Sign Out</a></li>
-          </ul>
-        </div>  
-            </div>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg border-bottom d-flex sticky-top container-fluid navbar__main--white"
+    >
+      <div class="container-lg div__navbar-main d-flex justify-content-between">
+        <div class="div__logo-search d-flex">
+          <div
+            class="container d-flex justify-content-around align-items-center"
+          >
+            <a class="navbar-brand" href="#">
+              <img
+                class="img__DEVlogo"
+                src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+                alt=""
+              />
+            </a>
+            <form class="d-flex form__search-box-nav" role="search">
+              <input
+                class="form-control me-2 imput__form-control d-none d-sm-none d-md-block"
+                type="search"
+                placeholder="Search..."
+                aria-label="Search"
+                place
+              />
+              <img
+                src="./assets/magnifyer.svg"
+                alt=""
+                class="img__magnifier d-inline-block position-absolute"
+              />
+            </form>
           </div>
-          </nav>
         </div>
-</body>
+        <div class="div__user-menu d-flex align-items-center">
+          <button class="button__create-post mx-1 d-none d-sm-none d-md-block">
+            Create Post
+          </button>
+          <button class="button__bell mx-1">
+            <img src="./assets/notificationbell.svg" alt="" class="img__bell" />
+          </button>
+          <div class="nav-item dropdown mx-1 me-5">
+            <a
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="./assets/user photo.webp"
+                alt=""
+                class="img__login rounded-circle align-items-center"
+              />
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">User name</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Dashboard</a></li>
+              <li><a class="dropdown-item" href="#">Create Post</a></li>
+              <li><a class="dropdown-item" href="#">Reading List</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Sign Out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col d-none d-sm-none d-md-block"></div>
+      <div class="col">
+        <div class="card mt-4" style="width: auto">
+          <img src="./assets/remote job.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Finding remote work in 2022</h5>
+            <p class="card-text"></p>
+            A few years back I wrote how to find remote work in 2019 after a
+            personal research of having to find a remote work for the first time
+            not by being approached by a headhunter, but on my own. That article
+            did better than a lot of other things I've written. However,
+            recently I had to hire people about of a very very early stage
+            startup (the very first hires other than the co-founders), and
+            noticed the list and feedback I had on my original article needed
+            some updates, especially with the business world embracing the
+            remote work more and more after the pandemic. So here they are - in
+            this article I'll cover the most popular platforms I've noticed as
+            being used and their pros and cons and in another one I'll cover the
+            perspective of someone looking to hire and the pros and cons of the
+            platforms then, as they more often than not are quite different. We
+            Work Remotely Still my favorite several years later! I've found most
+            of my job opportunities through WWR. Pros +All companies I have
+            contacted for job postings on this website were fast to +respond.
+            +All had a quickly moving hiring process. +It has several types of
+            jobs - marketing, programming, etc. +It also has the benefit of
+            showing where candidates must be located for the job. +It has kept
+            growing over the years. It now has 28,530 postings Cons -It doesn't
+            allow for an easy apply like other entries on the list. -The
+            increased number of companies leads to a bit of a dilution of how
+            often companies reply and how quick their process is. -There is no
+            streamlined way of applying for a job. The button for applying can
+            lead to anywhere - outside platforms or even just email addresses
+            without any guidance on what information is of interest to the
+            company. Remote Tech Jobs Built as a replacement of Stack Overflow
+            jobs, based on their description. Pros +It has much better filtering
+            capabilities than other options, to find what you are looking for
+            +All jobs get taken down after 30 days at most, ensuring fresh
+            listings. +Has a lot of open opportunities. Almost 5 000 at the time
+            of writing, which when the previous point is considered is a lot of
+            activity from companies looking for candidates. +Has an easy-apply
+            option. Cons -They also aggregate jobs from 11 other platforms,
+            aiming to be the go to place for finding remote work. However, when
+            tested with several postings from We Work Remotely, they didn't
+            appear in the results of Remote Tech Jobs. LinkedIn Pros +The most
+            obvious candidate for everyone. +The number of companies looking to
+            hire through LinkedIn has increased over the last several years.
+            +Has an easy-apply for a lot of the open positions +Can filter by
+            location as well (in case you need/want to go to an office as well
+            or are looking for a simpler legal process (when both you and your
+            employer are in the same country), or if you are just considering
+            moving there) +Can easily research the company's profile right there
+            in LinkedIn, including for active or past connections to get some
+            inside information Cons -It still has mostly permanent positions -A
+            lot of early-stage startups don't post on LinkedIn while they are
+            still in stealth mode, so if you are interested to be one of the
+            first hires at a company, other entries such as AngelList or
+            HackerNews would be better options AngelList Pros +Has a lot of
+            active listings +Companies are required to list their salary range
+            for the posting, so there is less of a chance of surprises
+            +Companies also list expected bonuses in terms of stock options +Has
+            a streamlined application process Cons -There is a lot of
+            competition especially because of the easy application process so
+            you'll need to stand out -Most of the companies on AngelList are
+            early stage start ups. This can be viewed as a benefit for some
+            people as well Otta Pros +Each company posting jobs at Otta is
+            screened by them so the quality feels a lot better than some other
+            platforms +Extremely good filtering +Streamlined application process
+            Cons -Lower number of overall job postings
+          </div>
+          <p><b>HackerNews</b></p>
+          <p>
+            This one is a bit more complicated as it has a few different parts:
+          </p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              https://news.ycombinator.com/jobs /
+              https://www.ycombinator.com/jobs
+            </li>
+            <li class="list-group-item">
+              Ask HN: Who is hiring? (September 2022) - new thread each month
+            </li>
+            <li class="list-group-item">
+              Ask HN: Who wants to be hired? (September 2022) - new thread each
+              month/li>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col d-none d-sm-none d-md-block">
+        <div class="card mt-4" style="width: 18rem">
+          <h5 class="card-title mx-3 mt-3">Kristian Ivanov</h5>
+          <a href="#" class="btn btn-primary">follow</a>
+          <div class="card-body">
+            <p class="card-text">
+              Tinkerer, crossfiter and a music junky... Maker of:
+              http://musicmeal.io / https://twitter.com/AudioPlayer3 &
+              https://twitter.com/BirdOfKnowledge &
+              https://twitter.com/JanusWorkspace LOCATION Sofia, Bulgaria WORK
+              Co-Founder and CTO JOINED 18 mar 2017
+            </p>
+          </div>
+        </div>
+        <div class="card mt-4" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">More from Kristian Ivanov</h5>
+            <p class="card-text">
+              <a class="text-decoration-none" href=""
+                >The interview is a two way process, what to look for and what
+                to watch out as an interviewer or a candidate
+                #hiring #career #findremotework #work</a
+              >
+              <a class="text-decoration-none" href=""
+                >Finding remote work in 2019 #remote #jobs #interview #career
+                Why most Front End Dev interviews (#JavaScript #Typescript) are
+                Shit #interviewquestions #typescript #interview 
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
