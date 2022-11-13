@@ -17,19 +17,16 @@ export const getPost = (urlDataBase) => {
     });
 };
 
-export const getSinglePost = () => {
-  fetch(
-    "https://dev-to-js-hp-default-rtdb.firebaseio.com/posts/-NGiTptjO27TufemUoSE",
-    {
-      method: "GET",
-      mode: "no-cors",
-      // headers: {
-      //   "Content-Type": "application/json",
-      //   "Access-Control-Allow-Origin": "*",
-      //   "Access-Control-Allow-Credentials": true,
-      // },
-    }
-  )
-    .then((response) => console.log(response))
+export const getSinglePost = (urlDataBase, id) => {
+  fetch(`${urlDataBase}posts/${id}.json`, {
+    method: "GET",
+    mode: "cors",
+    headers: {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Credentials": true,
+    },
+  })
+    .then((response) => response.json())
     .then((result) => console.log(result));
 };

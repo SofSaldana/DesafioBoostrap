@@ -15,4 +15,4 @@ const urlDataBase = enviroment.urlDb;
 
 // createPost(urlDataBase, post);
 getPost(urlDataBase);
-getSinglePost();
+getSinglePost(urlDataBase, "-NGiTptjO27TufemUoSE");
