@@ -1,5 +1,7 @@
 import enviroment from "../env.js";
 import { createPost } from "./functions/createPost.js";
+import { getPost } from "./functions/getPost.js";
+import { getSinglePost } from "./functions/getPost.js";
 const urlDataBase = enviroment.urlDb;
 
 // const post = {
@@ -11,4 +13,6 @@ const urlDataBase = enviroment.urlDb;
 //   creationDate: 10 / 10 / 2022,
 // };
 
-createPost(urlDataBase, post);
+// createPost(urlDataBase, post);
+getPost(urlDataBase);
+getSinglePost(urlDataBase, "-NGiTptjO27TufemUoSE");
