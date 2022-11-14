@@ -13,8 +13,10 @@ export const getPost = (urlDataBase) => {
         };
         return postToObject;
       });
+      return posts;
       console.log(posts);
-    });
+    })
+    .then((posts => posts))
 };
 
 export const getSinglePost = (urlDataBase, id) => {

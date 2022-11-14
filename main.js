@@ -6,6 +6,19 @@ import { updatePost } from "./functions/updatePost.js";
 import { deletedPost } from "./functions/deletePost.js";
 const urlDataBase = enviroment.urlDb;
 
+const payaso = getPost(urlDataBase);
+console.log(payaso)
+
+// const renderContainer = document.querySelectorAll('#renderContainer')
+
+// heroes.forEach(heroe => {
+//     const card = createCard(heroe.nombre, heroe.descripcion, heroe.img);
+//     const col = document.createElement('div');
+//     col.classList.add('col-sm-4');
+//     col.appendChild(card);
+//     row.appendChild(col);
+// });
+
 // const post = {
 //   id: "43348973476878",
 //   coverImage: "www.img-url.com",
@@ -16,8 +29,8 @@ const urlDataBase = enviroment.urlDb;
 // };
 
 // createPost(urlDataBase, post);
-getPost(urlDataBase);
+// getPost(urlDataBase);
 // getSinglePost(urlDataBase, "-NGiTptjO27TufemUoSE");
-const newInfo = {title: "huele a crotolamo"}
+// const newInfo = {title: "huele a crotolamo"}
 // updatePost(urlDataBase,newInfo,"-NGiTptjO27TufemUoSE");
-deletedPost(urlDataBase,"-NGiTvuvH831kBXy5gL8");
+// deletedPost(urlDataBase,"-NGoS6RCAtnNFHALmdw_");
