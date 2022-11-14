@@ -2,6 +2,7 @@ import enviroment from "../env.js";
 import { createPost } from "./functions/createPost.js";
 import { getPost } from "./functions/getPost.js";
 import { getSinglePost } from "./functions/getPost.js";
+import { updatePost } from "./functions/updatePost.js";
 const urlDataBase = enviroment.urlDb;
 
 // const post = {
@@ -16,3 +17,5 @@ const urlDataBase = enviroment.urlDb;
 // createPost(urlDataBase, post);
 getPost(urlDataBase);
 getSinglePost(urlDataBase, "-NGiTptjO27TufemUoSE");
+const newInfo = {title: "huele a crotolamo"}
+updatePost(urlDataBase,newInfo,"-NGiTptjO27TufemUoSE");
