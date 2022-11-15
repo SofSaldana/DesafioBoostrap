@@ -1,6 +1,5 @@
 import { getPost } from "./getPost.js";
 
-
 export const renderPost = (imgUrl, title) => {
   const postContainer = document.createElement("div");
   postContainer.classList.add("card", "card__main", "mb-3");
@@ -18,15 +17,15 @@ export const renderPost = (imgUrl, title) => {
   postTitleLink.href = "./post1.html";
 
   const postTitle = document.createElement("h5");
-  postTitle.classList.add("card-title");
-  postTitle.innerText(title);
+  postTitle.classList.add("card-title", "title__post-h5");
+  const selectPostTitle = document.getElementsByClassName("title__post-h5");
+  selectPostTitle.innerText = title;
 
   const postTagsContainer = document.createElement("div");
   postTagsContainer.classList.add("div__card-hashtag");
 
   const postTags = document.createElement("a");
   postTags.classList.add("a__card-hashtag", "text-decoration-none", "btn");
-  
 
   const postFooter = document.createElement("div");
   postFooter.classList.add("div__card-buttons", "text");
@@ -42,7 +41,7 @@ export const renderPost = (imgUrl, title) => {
     "text-decoration-none",
     "btn"
   );
-  postReactions.innerText("34 reactions");
+  postReactions.innerText = "34 reactions";
 
   const postComments = document.createElement("img");
   postComments.classList.add("img__convesation-icon");
@@ -55,20 +54,19 @@ export const renderPost = (imgUrl, title) => {
     "text-decoration-none",
     "btn"
   );
-  postNumberOfComments.innerText("26 comments");
+  postNumberOfComments.innerText = "26 comments";
 
-
-  postContainer.appendChild(postBody)
-  postBody.appendChild(postImg)
-  postBody.appendChild(postTitleLink)
-  postBody.appendChild(postTitle)
-  postBody.appendChild(postTagsContainer)
-  postTagsContainer.appendChild(postTags)
-  postBody.appendChild(postFooter)
-  postFooter.appendChild(postLike)
-  postFooter.appendChild(postReactions)
-  postFooter.appendChild(postComments)
-  postFooter.appendChild(postNumberOfComments)
+  postContainer.appendChild(postBody);
+  postBody.appendChild(postImg);
+  postBody.appendChild(postTitleLink);
+  postBody.appendChild(postTitle);
+  postBody.appendChild(postTagsContainer);
+  postTagsContainer.appendChild(postTags);
+  postBody.appendChild(postFooter);
+  postFooter.appendChild(postLike);
+  postFooter.appendChild(postReactions);
+  postFooter.appendChild(postComments);
+  postFooter.appendChild(postNumberOfComments);
 
   return postContainer;
 };
