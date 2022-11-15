@@ -17,11 +17,10 @@ export const renderPost = (imgUrl, title) => {
   postTitleLink.href = "./post1.html";
 
   const postTitle = document.createElement("h5");
-  postTitle.setAttribute("id", "kycprro");
+  postTitle.setAttribute("id", "testing01");
   postTitle.classList.add("card-title", "title__post-h5");
   // const selectPostTitle = document.getElementById("kycprro");
   postTitle.innerText = title;
-  console.log(postTitle);
 
   const postCardText = document.createElement("p");
   postCardText.classList.add("card-text");
@@ -66,6 +65,13 @@ export const renderPost = (imgUrl, title) => {
 
   postBody.appendChild(postTitle);
   postBody.appendChild(postCardText);
+  postBody.appendChild(postTagsContainer);
+  postTagsContainer.appendChild(postTags);
+  postBody.appendChild(postFooter);
+  postBody.appendChild(postLike);
+  postBody.appendChild(postReactions);
+  postBody.appendChild(postComments);
+  postBody.appendChild(postNumberOfComments);
   postContainer.appendChild(postImg);
   postContainer.appendChild(postBody);
 
