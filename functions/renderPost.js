@@ -1,7 +1,7 @@
 import { getPost } from "./getPost.js";
 
 
-export const postTemplate = (imgUrl, title) => {
+export const renderPost = (imgUrl, title) => {
   const postContainer = document.createElement("div");
   postContainer.classList.add("card", "card__main", "mb-3");
 

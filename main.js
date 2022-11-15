@@ -6,9 +6,7 @@ import { updatePost } from "./functions/updatePost.js";
 import { deletedPost } from "./functions/deletePost.js";
 const urlDataBase = enviroment.urlDb;
 
-// const payaso = getPost(urlDataBase);
-// console.log(payaso)
-getPost(urlDataBase, (posts) => console.log(posts));
+getPost(urlDataBase);
 
 // const renderContainer = document.querySelectorAll('#renderContainer')
 

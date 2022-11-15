@@ -1,5 +1,7 @@
-export const getPost = (urlDataBase, success) => {
-  fetch(`${urlDataBase}/posts.json`, {
+import { renderPost } from "./renderPost.js";
+
+export const getPost = (urlDataBase) => {
+  fetch(`${urlDataBase}posts.json`, {
     method: "GET",
   })
     .then((response) => response.json())
@@ -13,11 +15,11 @@ export const getPost = (urlDataBase, success) => {
         };
         return postToObject;
       });
-      success(posts);
-      // return posts;
-      // console.log(posts);
+      return posts;
+    })
+    .then((posts) => {
+      posts.forEach((post) => renderPost(post.coverImage, post.title));
     });
-  // .then((posts => posts))
 };
 
 export const getSinglePost = (urlDataBase, id) => {
