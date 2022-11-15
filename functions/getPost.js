@@ -1,4 +1,4 @@
-export const getPost = (urlDataBase) => {
+export const getPost = (urlDataBase, success) => {
   fetch(`${urlDataBase}/posts.json`, {
     method: "GET",
   })
@@ -13,10 +13,11 @@ export const getPost = (urlDataBase) => {
         };
         return postToObject;
       });
-      return posts;
-      console.log(posts);
-    })
-    .then((posts => posts))
+      success(posts);
+      // return posts;
+      // console.log(posts);
+    });
+  // .then((posts => posts))
 };
 
 export const getSinglePost = (urlDataBase, id) => {
