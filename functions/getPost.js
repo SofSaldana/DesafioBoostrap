@@ -18,7 +18,14 @@ export const getPost = (urlDataBase) => {
       return posts;
     })
     .then((posts) => {
-      posts.forEach((post) => renderPost(post.coverImage, post.title));
+      const postsContainer = document.getElementById("renderContainer");
+      posts.forEach((post) => {
+        const showPost = renderPost(post.coverImage, post.title);
+        const postCard = document.createElement("div");
+        postCard.classList.add("col-sm-4");
+        postCard.appendChild(showPost);
+        postsContainer.appendChild(postCard);
+      });
     });
 };
 
