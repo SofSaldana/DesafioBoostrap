@@ -17,9 +17,17 @@ export const renderPost = (imgUrl, title) => {
   postTitleLink.href = "./post1.html";
 
   const postTitle = document.createElement("h5");
+  postTitle.setAttribute("id", "kycprro");
   postTitle.classList.add("card-title", "title__post-h5");
-  const selectPostTitle = document.getElementsByClassName("title__post-h5");
-  selectPostTitle.innerText = title;
+  // const selectPostTitle = document.getElementById("kycprro");
+  postTitle.innerText = title;
+  console.log(postTitle);
+
+  const postCardText = document.createElement("p");
+  postCardText.classList.add("card-text");
+
+  const smallText = document.createElement("small");
+  smallText.classList.add("text-muted");
 
   const postTagsContainer = document.createElement("div");
   postTagsContainer.classList.add("div__card-hashtag");
@@ -56,17 +64,10 @@ export const renderPost = (imgUrl, title) => {
   );
   postNumberOfComments.innerText = "26 comments";
 
-  postContainer.appendChild(postBody);
-  postBody.appendChild(postImg);
-  postBody.appendChild(postTitleLink);
   postBody.appendChild(postTitle);
-  postBody.appendChild(postTagsContainer);
-  postTagsContainer.appendChild(postTags);
-  postBody.appendChild(postFooter);
-  postFooter.appendChild(postLike);
-  postFooter.appendChild(postReactions);
-  postFooter.appendChild(postComments);
-  postFooter.appendChild(postNumberOfComments);
+  postBody.appendChild(postCardText);
+  postContainer.appendChild(postImg);
+  postContainer.appendChild(postBody);
 
   return postContainer;
 };

@@ -19,12 +19,14 @@ export const getPost = (urlDataBase) => {
     })
     .then((posts) => {
       const postsContainer = document.getElementById("renderContainer");
+      console.log(postsContainer);
       posts.forEach((post) => {
+        console.log(post);
         const showPost = renderPost(post.coverImage, post.title);
-        const postCard = document.createElement("div");
-        postCard.classList.add("col-sm-4");
-        postCard.appendChild(showPost);
-        postsContainer.appendChild(postCard);
+        // const postCard = document.createElement("div");
+        // postCard.classList.add("col-sm-4");
+        // postCard.appendChild(showPost);
+        postsContainer.appendChild(showPost);
       });
     });
 };
