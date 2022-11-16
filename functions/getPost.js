@@ -1,5 +1,7 @@
+import { renderPost } from "./renderPost.js";
+
 export const getPost = (urlDataBase) => {
-  fetch(`${urlDataBase}/posts.json`, {
+  fetch(`${urlDataBase}posts.json`, {
     method: "GET",
   })
     .then((response) => response.json())
@@ -13,7 +15,19 @@ export const getPost = (urlDataBase) => {
         };
         return postToObject;
       });
-      console.log(posts);
+      return posts;
+    })
+    .then((posts) => {
+      const postsContainer = document.getElementById("renderContainer");
+      console.log(postsContainer);
+      posts.forEach((post) => {
+        console.log(post);
+        const showPost = renderPost(post.coverImage, post.title);
+        // const postCard = document.createElement("div");
+        // postCard.classList.add("col-sm-4");
+        // postCard.appendChild(showPost);
+        postsContainer.appendChild(showPost);
+      });
     });
 };
 
