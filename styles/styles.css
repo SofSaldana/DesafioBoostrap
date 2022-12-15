@@ -259,4 +259,11 @@ body {
 
 .img__convesation-icon {
   height: 15px;
-}/*# sourceMappingURL=styles.css.map */
+  
+}
+.form__login {
+  width: fit-content;
+  height: fit-content;
+}
+
+/*# sourceMappingURL=styles.css.map */

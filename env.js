@@ -1,4 +1,4 @@
 const enviroment = {
-    urlDb: "https://dev-to-js-hp-default-rtdb.firebaseio.com/",
-  };
-  export default enviroment;
+  urlDb: "http://localhost:8000/",
+};
+export default enviroment;
